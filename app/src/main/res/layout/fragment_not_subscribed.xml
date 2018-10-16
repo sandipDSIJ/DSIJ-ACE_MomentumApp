@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/inactive_background"
+    tools:context="in.dsij.acemomentum.fragment.NotSubscribedFragment">
+
+    <LinearLayout
+        android:background="@color/active_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:layout_marginRight="@dimen/default_gap"
+        android:layout_marginBottom="@dimen/default_gap">
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_error_black_48dp"/>
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvError"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:layout_marginRight="@dimen/default_gap"
+        android:gravity="center"
+        tools:text="Not Subscribed to this Product"
+        android:textColor="@color/font_hint"
+        android:textSize="@dimen/font_primary" />
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:visibility="gone"
+            android:id="@+id/tvBrief"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_gap"
+            android:layout_marginRight="@dimen/default_gap"
+            android:gravity="center"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_primary" />
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:visibility="gone"
+            android:id="@+id/tvBtnKnowMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_primary_action"
+            android:text="Know more"
+            android:padding="@dimen/default_margin"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.dsij.acemomentum.fragment.LoadingFragment">
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:padding="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        app:fontName="@string/font_instruction"
+        tools:text="Loading..." />
+
+</FrameLayout>

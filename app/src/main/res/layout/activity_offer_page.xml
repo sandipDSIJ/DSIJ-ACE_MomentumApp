@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfferPageActivity"
+    android:orientation="vertical">
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_header"
+        app:fontName="@string/font_regular"
+        tools:text="September, 2015"/>
+
+    <LinearLayout
+        android:background="@color/font_summery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+       <!-- <com.facebook.drawee.view.SimpleDraweeView
+            android:background="@color/active_background"
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+           android:src="@color/colorAccent"
+            android:layout_weight="1"
+           />-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:actualImageScaleType="fitCenter"
+            app:placeholderImage="@drawable/place_holder"/>
+
+        <!--<in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_regular"
+            tools:text="September, 2015"/>-->
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvHealine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_regular"
+            tools:text="headline"
+            />
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvSummery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="10"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_regular"
+            tools:text="To be a successful trader, one needs to gauge the trend and place a bet in favour of the trend. Most traders often make their trading decisions based solely on a single timeframe."
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_primary"
+                app:fontName="@string/font_regular"
+                tools:text="Done"/>
+
+<!--
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBarDownload"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvBtnReadOrBuy"
+                android:layout_toRightOf="@+id/tvBtnReadOrBuy"
+                android:indeterminate="true"
+                android:padding="10dp"
+                android:progressTint="@color/colorPrimary"
+                />-->
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

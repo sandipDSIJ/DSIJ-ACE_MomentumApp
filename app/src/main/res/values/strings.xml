@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">AceMomentum</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Actual Fonts-->
+    <string name="HelveticaNeueHv">HelveticaNeueHv.ttf</string>
+    <string name="HelveticaNeueLt">HelveticaNeueLt.ttf</string>
+    <string name="HelveticaNeueMedium">HelveticaNeueMedium.ttf</string>
+
+    <!--Actual Fonts-->
+    <string name="WorkSansRegular">WorkSansRegular.ttf</string>
+    <string name="WorkSansSemiBold">WorkSansSemiBold.ttf</string>
+
+    <!--App Fonts-->
+    <string name="font_regular">@string/WorkSansRegular</string>
+    <string name="font_semibold">@string/WorkSansSemiBold</string>
+
+    <!--App Fonts-->
+    <string name="font_header">@string/font_semibold</string>
+    <string name="font_main">@string/font_regular</string>
+    <string name="font_button">@string/font_regular</string>
+    <string name="font_edit_text">@string/font_regular</string>
+    <string name="font_feed_headline">@string/font_semibold</string>
+    <string name="font_feed_summery">@string/font_regular</string>
+    <string name="font_feed_time">@string/font_regular</string>
+    <string name="font_instruction">@string/font_regular</string>
+
+    <string name="default_notification_channel_id" translatable="false">Acemomentum_default_channel</string>
+    <string name="preference_file_key">in.dsij.acemomentum.SharedPreferences.File.preference_file_key</string>
+    <string name="enable_notifications">in.dsij.acemomentum.SharedPreferences.Key.enable_notifications</string>
+
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <!--<string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>-->
+
+</resources>

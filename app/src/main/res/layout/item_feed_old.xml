@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/active_background"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_secondary"
+            android:textSize="@dimen/font_secondary"
+            app:fontName="@string/font_feed_time"
+            tools:text="02:00 PM" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_gap" />
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_feed_header_older"
+            android:textSize="@dimen/font_primary"
+            app:fontName="@string/font_feed_summery"
+            tools:text="POP BTST - POP BTST BUY JUBLFOOD 1606-1609 TGT 1630-1638 SL 1584 (CMP: 1608.9). UP Move expected within next 2 days" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_margin" />
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:visibility="gone"
+        android:id="@+id/tvSummery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_secondary"
+        android:textSize="@dimen/font_secondary"
+        app:fontName="@string/font_feed_summery"
+        tools:text="Buy Triggered CMP @2760, Recommended buy above 2760" />
+
+</LinearLayout>

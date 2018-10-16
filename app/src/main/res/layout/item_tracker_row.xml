@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/font_ternary"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>-->
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvCompany"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_table"
+            app:fontName="@string/font_main"
+            tools:text="Shriram Transport Finance Company Ltd."
+            />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/font_ternary"/>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvRecPrice"
+                android:layout_width="75dp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/font_table"
+                app:fontName="@string/font_main"
+                tools:text="2760.90"/>
+            <in.dsij.acemomentum.view.MyTextView
+                android:layout_weight="1"
+
+                android:id="@+id/tvRecDate"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/font_table"
+                app:fontName="@string/font_main"
+                tools:text="Aug 25, 2015"/>/
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/font_ternary"/>
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:layout_weight="1"
+
+            android:id="@+id/tvOperation"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_table"
+            app:fontName="@string/font_main"
+            tools:text="B"/>
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/font_ternary"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:layout_weight="1"
+
+                android:id="@+id/tvExitPrice"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/font_table"
+                app:fontName="@string/font_main"
+                tools:text="3249.50"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:layout_weight="1"
+
+                android:id="@+id/tvExitDate"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/font_table"
+                app:fontName="@string/font_main"
+                tools:text="Apr 18, 2016"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/font_ternary"/>
+        <in.dsij.acemomentum.view.MyTextView
+            android:layout_weight="1"
+
+            android:id="@+id/tvReturn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_table"
+            app:fontName="@string/font_main"
+            tools:text="-17.70%"/>
+        <!--<View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/active_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.acemomentum.fragment.LoginFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:maxLines="2"
+            android:paddingBottom="@dimen/font_header"
+            android:paddingTop="@dimen/font_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:lines="1"
+            android:text="Device Check Confirmation"
+            android:textColor="@color/font_active"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_header" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_gap"
+        android:background="@color/active_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvLabelForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="40dp"
+            android:text="You already have signed in via other device. Loging in here will sign you out of the other device."
+            android:textColor="@color/font_inactive"
+            android:textSize="16dp"
+            app:fontName="@string/font_instruction" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <in.dsij.acemomentum.view.UnderlinedTextView
+                android:id="@+id/tvOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="Ok"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                app:fontName="@string/font_instruction"
+                app:underlineColor="@color/colorPrimary"
+                app:underlineSpacing="7dp"
+                app:underlineWidth="0.5dp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <in.dsij.acemomentum.view.UnderlinedTextView
+                android:id="@+id/tvCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Cancel"
+                android:textColor="@color/font_inactive"
+                android:textSize="16dp"
+                app:fontName="@string/font_instruction"
+                app:underlineColor="@color/white"
+                app:underlineSpacing="7dp"
+                app:underlineWidth="0.5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

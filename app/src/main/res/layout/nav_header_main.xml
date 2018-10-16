@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvProfileTitles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+            android:background="@drawable/profile_background"
+            android:gravity="center"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_regular"
+            app:textAllCaps="true"
+            tools:text="RP" />
+    </FrameLayout>
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:fontName="@string/font_main"
+        tools:text="Test DSIJ" />
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontName="@string/font_main"
+        tools:text="test@dsij.in" />
+
+</LinearLayout>

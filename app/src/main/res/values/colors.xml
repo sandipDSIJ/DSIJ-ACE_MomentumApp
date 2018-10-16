@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--System Colors-->
+    <!--<color name="colorPrimary">@color/dsij_red</color>
+    <color name="colorPrimaryDark">@color/dsij_red_dark</color>
+    <color name="colorAccent">@color/font_primary</color>-->
+   <!-- Previous <color name="colorPrimary">@color/dsij_red_dark</color>
+    <color name="colorPrimaryDark">@color/dsij_red</color>
+    <color name="colorAccent">@color/font_primary</color>-->
+
+    <!--System Colors-->
+    <color name="colorPrimary">@color/dsij_red</color>
+    <color name="colorPrimaryDark">@color/dsij_red_dark</color>
+    <color name="colorAccent">@color/font_primary</color>
+
+    <!--Original Colors-->
+    <!--<color name="dsij_red">#f20506</color>
+    <color name="dsij_red_dark">#cf0405</color>
+    <color name="font_primary">#464646</color>-->
+
+
+    <color name="dsij_red">#737071</color>
+    <color name="dsij_red_dark">#373435</color>
+    <color name="color_blue">#4c51ca</color>
+    <!--<color name="dsij_red_dark">#cf0405</color>-->
+    <color name="font_primary">#464646</color>
+    <color name="font_secondary">#959595</color>
+    <color name="font_ternary">#b7b7b7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey_10">#ebebeb</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+
+    <!--App Colors-->
+    <color name="font_header">@color/font_primary</color>
+    <color name="font_summery">@color/font_secondary</color>
+    <color name="font_hint">@color/font_ternary</color>
+    <color name="inactive_background">@color/grey_10</color>
+    <color name="active_background">@color/white</color>
+
+    <color name="font_primary_action">@color/colorPrimary</color>
+    <color name="font_secondary_action">@color/font_primary</color>
+
+    <color name="font_feed_header_new">@color/colorPrimary</color>
+    <color name="font_feed_header_older">@color/font_primary</color>
+    <color name="tab_deselected_text">#aaffffff</color>
+
+
+    <color name="font_inactive">#acacac</color>
+    <color name="font_active">@color/colorPrimary</color>
+
+    <color name="feed_header">#767676</color>
+</resources>

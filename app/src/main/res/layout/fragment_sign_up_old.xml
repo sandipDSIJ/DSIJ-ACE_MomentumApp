@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/active_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.acemomentum.fragment.LoginFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:maxLines="2"
+            android:paddingBottom="@dimen/font_header"
+            android:paddingTop="@dimen/font_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Sign Up"
+            android:textColor="@color/font_active"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_header" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_gap"
+        android:background="@color/active_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:minWidth="182dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="40dp"
+            android:textColorHint="@color/font_hint">
+
+            <in.dsij.acemomentum.view.MyEditText
+                android:id="@+id/etName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:minWidth="182dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:minWidth="182dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/font_hint">
+
+            <in.dsij.acemomentum.view.MyEditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:minWidth="182dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:minWidth="182dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/font_hint">
+
+            <in.dsij.acemomentum.view.MyEditText
+                android:id="@+id/etPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:minWidth="182dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:minWidth="182dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/font_hint"
+            app:passwordToggleEnabled="false">
+
+            <in.dsij.acemomentum.view.MyEditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:minWidth="182dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:minWidth="182dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/font_hint"
+            app:passwordToggleEnabled="false">
+
+            <in.dsij.acemomentum.view.MyEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:minWidth="182dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="By Signing up  you to DSIJ Notifier App you agree to our"
+            android:textColor="@color/font_inactive"
+            android:textSize="@dimen/font_terms"
+            app:fontName="@string/font_feed_summery"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_terms"
+                app:fontName="@string/font_feed_summery"
+                />
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "
+                android:textColor="@color/font_inactive"
+                android:textSize="@dimen/font_terms"
+
+                app:fontName="@string/font_feed_summery"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="Terms of Use"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_terms"
+                app:fontName="@string/font_feed_summery"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_gap"
+        android:background="@color/active_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:fontName="@string/HelveticaNeueMedium" />
+
+        <View
+            android:layout_width="@dimen/button_gap"
+            android:layout_height="match_parent"
+            android:background="@color/active_background" />
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/font_inactive"
+            android:textSize="20dp"
+            app:fontName="@string/HelveticaNeueMedium" />
+    </LinearLayout>
+
+</LinearLayout>

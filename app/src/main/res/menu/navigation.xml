@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_calls"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Calls" />
+
+    <item
+        android:id="@+id/navigation_mindshare"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Mindshare" />
+
+    <item
+        android:id="@+id/navigation_tracker"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Tracker" />
+
+    <item
+        android:id="@+id/navigation_screener"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Screener" />
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Products" />
+
+</menu>

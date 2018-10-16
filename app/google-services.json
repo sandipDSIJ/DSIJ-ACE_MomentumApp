@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1077738959229",
+    "firebase_url": "https://acemomentum-c2cdf.firebaseio.com",
+    "project_id": "acemomentum-c2cdf",
+    "storage_bucket": "acemomentum-c2cdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077738959229:android:6b000c47d043cb71",
+        "android_client_info": {
+          "package_name": "in.dsij.acemomentum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077738959229-3ttms7vtl4us77mcq40l7c23bvbs3968.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.dsij.acemomentum",
+            "certificate_hash": "b38d0e2d5d3dbe4d013846095466b411dc0b0a58"
+          }
+        },
+        {
+          "client_id": "1077738959229-cvdfd4cbqn6ru9vra580hm2q8k3fbsm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiSElXyjgRJO9v07n3m14fPH385e_WOmY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077738959229-cvdfd4cbqn6ru9vra580hm2q8k3fbsm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

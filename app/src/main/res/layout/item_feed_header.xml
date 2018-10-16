@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.dsij.acemomentum.view.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvFeedHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_feed_header"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/default_margin"
+    android:paddingRight="@dimen/default_margin"
+    android:textAllCaps="true"
+    android:textColor="@color/font_primary"
+    android:textSize="@dimen/font_dialog"
+    app:fontName="@string/font_edit_text"
+    tools:text="Today">
+
+</in.dsij.acemomentum.view.MyTextView>

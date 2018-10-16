@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_dialog"
+    android:layout_marginRight="@dimen/margin_dialog"
+    android:background="@color/active_background"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_dialog"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    tools:context="in.dsij.acemomentum.fragment.DownloadablesBottomSheetDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/bar_side_margin"
+        android:layout_height="@dimen/bar_side_margin"
+        android:src="@drawable/ic_close_white_48dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDownloadables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_dialog"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/bar_side_margin"
+        android:layout_marginTop="@dimen/margin_dialog"
+        android:background="@color/active_background"
+        android:paddingRight="@dimen/margin_dialog"/>
+
+
+    <in.dsij.acemomentum.view.MyTextView
+        android:maxLines="2"
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/bar_side_margin"
+        android:layout_marginTop="@dimen/margin_dialog"
+        android:gravity="right"
+        android:paddingRight="@dimen/margin_dialog"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_terms"
+        app:fontName="@string/font_main"
+        android:text="! Use your Subscription Number as Password" />
+
+
+</LinearLayout>

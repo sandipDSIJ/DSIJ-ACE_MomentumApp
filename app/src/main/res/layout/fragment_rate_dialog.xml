@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:theme="@style/AppTheme.NoActionBar"
+              tools:context="in.dsij.acemomentum.fragment.RateDialogFragment">
+
+    <!--<in.dsij.acemomentum.view.MyTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/article_1_summery_text"
+        app:fontName="@string/font_article_1_headline"
+        tools:text="Alert Title"/>
+
+    <LinearLayout
+        android:id="@+id/llRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="Rate Us"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_main"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:rating="4"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/font_hint">
+
+            <in.dsij.acemomentum.view.MyAutoCompleteTextView
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:hint="Comments"
+                android:imeOptions="actionNone"
+                android:inputType="textMultiLine"
+                android:maxLines="15"
+                android:textColor="@color/font_primary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="16dp"
+                app:fontName="@string/font_main"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvPlayStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:paddingTop="10dp"
+            android:text="Please update your rating on Play Store."
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/font_hint"
+            android:textSize="16dp"
+            app:fontName="@string/font_main"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvBtnNever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Never"
+                android:textColor="@color/article_1_summery"
+                android:textSize="@dimen/article_1_summery_text"
+                app:fontName="@string/font_article_1_summery"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvBtnNotNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Not Now"
+                android:textColor="@color/article_1_summery"
+                android:textSize="@dimen/article_1_summery_text"
+                app:fontName="@string/font_article_1_summery"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvBtnContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Continue"
+                android:textColor="@color/article_1_summery"
+                android:textSize="@dimen/article_1_summery_text"
+                app:fontName="@string/font_article_1_summery"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvBtnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corner_border_primary"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Done"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/article_1_summery_text"
+                app:fontName="@string/font_article_1_summery"/>
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvBtnPlayStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corner_border_primary"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Play Store"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/article_1_summery_text"
+                app:fontName="@string/font_article_1_summery"/>
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+</LinearLayout>
+

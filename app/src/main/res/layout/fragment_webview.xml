@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.acemomentum.fragment.WebViewFragment">
+
+    <FrameLayout
+        android:layout_marginBottom="@dimen/default_gap"
+        android:paddingLeft="@dimen/bar_side_margin"
+        android:paddingRight="@dimen/bar_side_margin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/active_background">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvHeader"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:text="Sign In"
+            android:textColor="@color/font_header"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_header" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/inactive_background">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/active_background"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:background="@color/transparent"
+            android:indeterminate="true"
+            />
+    </FrameLayout>
+</LinearLayout>
+

@@ -1,0 +1,342 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.acemomentum.fragment.AccountFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/active_background"
+        android:paddingLeft="@dimen/bar_side_margin"
+        android:paddingRight="@dimen/bar_side_margin">
+
+        <in.dsij.acemomentum.view.MyTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="My Account"
+            android:textAllCaps="true"
+            android:textColor="@color/font_header"
+            android:textSize="@dimen/font_header"
+            app:fontName="@string/font_header" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_gap"
+        android:layout_weight="1"
+        android:background="@color/active_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.2dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_margin">
+
+            <in.dsij.acemomentum.view.MyTextView
+                android:id="@+id/tvProfileTitles"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginRight="@dimen/default_margin"
+                android:background="@drawable/profile_background"
+                android:gravity="center"
+                android:textColor="@color/font_secondary"
+                android:textSize="40dp"
+                app:fontName="@string/font_regular"
+                app:textAllCaps="true"
+                tools:text="RP" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/default_gap"
+                android:orientation="vertical">
+
+                <in.dsij.acemomentum.view.MyTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/default_gap"
+                    android:textColor="@color/font_header"
+                    android:textSize="@dimen/font_header"
+                    app:fontName="@string/font_regular"
+                    tools:text="Rajesh Padode" />
+
+                <in.dsij.acemomentum.view.MyTextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/default_gap"
+                    android:textColor="@color/font_secondary"
+                    android:textSize="@dimen/font_dialog"
+                    app:fontName="@string/font_regular"
+                    tools:text="rajeshp@dsij.in" />
+
+                <in.dsij.acemomentum.view.MyTextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/font_secondary"
+                    android:textSize="@dimen/font_dialog"
+                    app:fontName="@string/font_regular"
+                    tools:text="9035901911" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.74dp"
+            android:background="@color/inactive_background" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_dialog"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:layout_marginTop="@dimen/margin_dialog"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llNotifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_notifications_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Notifications"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/notificationToggle"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_marginRight="@dimen/default_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:id="@+id/llAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_people_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:id="@+id/llContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_email_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:id="@+id/llTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_assignment_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; Conditions"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:id="@+id/llPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_lock_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policies"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:id="@+id/llLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_power_settings_new_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="@dimen/margin_account_icon"
+                        android:src="@drawable/ic_power_settings_new_black_48dp" />
+
+                    <in.dsij.acemomentum.view.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="@color/font_header"
+                        android:textSize="@dimen/font_primary"
+                        app:fontName="@string/font_edit_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_options_gap"
+                    android:layout_marginLeft="62dp"
+                    android:background="@color/font_ternary" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
